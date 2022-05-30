@@ -63,7 +63,7 @@ public class PlayerMove : MonoBehaviour
              GameObject particle = Instantiate(GameManager.instance.particlePrefab);
              particle.transform.position = particlePos.position;
              transform.GetComponent<Animator>().SetBool("Death", true);
-            GameManager.instance.EndGame();
+             GameManager.instance.EndGame();
         }
     }
 }
